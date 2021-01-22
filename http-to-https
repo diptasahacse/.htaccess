@@ -1,0 +1,16 @@
+#Enter the file name as .htaccess and click on create a new file
+
+#The file is successfully created.
+
+#Right-click on .htaccess file and click on edit and paste the following redirection code here.
+----------------------------------------------------------------------------------------------------
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+------------------------------------------------------------------------------------------------------
+
+#If in your database .htaccess file is already present then just paste 2 and 3 lines.
+
+#Save the changes and refresh your website.
+
+#Your website is successfully redirected to HTTP to https via .htaccess file.
